@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Datos y Algoritmos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1>Estructuras de Datos y Algoritmos</h1></center>
+
+    <h2>1. Estructuras de Datos</h2>
+
+    <h3>Arrays (Arreglos)</h3>
+    <ul>
+        <li><strong>Definición y características:</strong> Un array es una colección de elementos almacenados en ubicaciones contiguas de memoria. Cada elemento puede ser accedido mediante un índice. Los arrays son de tamaño fijo y homogéneos, lo que significa que todos los elementos deben ser del mismo tipo.</li>
+        <li><strong>Operaciones básicas:</strong>
+            <ul>
+                <li>Acceso: Tiempo constante (O(1)) cuando se accede a través de un índice.</li>
+                <li>Inserción: Puede ser costosa si se necesita desplazar elementos. O(n) en el peor caso.</li>
+                <li>Eliminación: Similar a la inserción, requiere desplazamiento de elementos. O(n) en el peor caso.</li>
+            </ul>
+        </li>
+        <li><strong>Arrays multidimensionales:</strong> Son arrays de arrays, lo que permite la representación de datos en más de una dimensión, como matrices (2D), cubos (3D), etc.</li>
+    </ul>
+
+    <h3>Listas Enlazadas</h3>
+    <ul>
+        <li><strong>Listas enlazadas simples:</strong> Una lista de nodos donde cada nodo contiene un dato y un puntero al siguiente nodo en la lista. Se permite un acceso secuencial, pero no aleatorio.</li>
+        <li><strong>Listas doblemente enlazadas:</strong> Similar a las listas simples, pero cada nodo tiene dos punteros: uno al siguiente nodo y otro al anterior.</li>
+        <li><strong>Listas circularmente enlazadas:</strong> Las listas circulares son similares a las listas enlazadas simples o dobles, pero el último nodo se conecta de nuevo al primero, formando un ciclo.</li>
+        <li><strong>Operaciones básicas:</strong>
+            <ul>
+                <li>Inserción: O(1) si se hace en la cabeza o cola; O(n) si se inserta en una posición específica.</li>
+                <li>Eliminación: Similar a la inserción, con tiempo O(1) o O(n).</li>
+                <li>Búsqueda: O(n), ya que se requiere recorrer la lista.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Pilas (Stacks)</h3>
+    <ul>
+        <li><strong>Principio LIFO:</strong> El último elemento en entrar es el primero en salir.</li>
+        <li><strong>Operaciones:</strong>
+            <ul>
+                <li>Push: Inserta un elemento en la parte superior de la pila.</li>
+                <li>Pop: Elimina y retorna el elemento en la parte superior de la pila.</li>
+                <li>Peek: Devuelve el elemento superior sin eliminarlo.</li>
+            </ul>
+        </li>
+        <li><strong>Implementación:</strong> Las pilas pueden implementarse usando arrays o listas enlazadas.</li>
+    </ul>
+
+    <h3>Colas (Queues)</h3>
+    <ul>
+        <li><strong>Principio FIFO:</strong> El primer elemento en entrar es el primero en salir.</li>
+        <li><strong>Tipos:</strong>
+            <ul>
+                <li>Colas simples: Operaciones en los extremos de la estructura.</li>
+                <li>Colas circulares: La cola se considera cíclica, volviendo al principio cuando llega al final.</li>
+                <li>Colas de prioridad: Los elementos se procesan según su prioridad.</li>
+            </ul>
+        </li>
+        <li><strong>Operaciones:</strong>
+            <ul>
+                <li>Enqueue: Añadir un elemento al final de la cola.</li>
+                <li>Dequeue: Eliminar el primer elemento de la cola.</li>
+                <li>Front: Acceder al primer elemento sin eliminarlo.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Árboles</h3>
+    <ul>
+        <li><strong>Árbol binario:</strong> Cada nodo tiene como máximo dos hijos.</li>
+        <li><strong>Árbol de búsqueda binaria (BST):</strong> Los hijos a la izquierda del nodo son menores y los hijos a la derecha son mayores.</li>
+        <li><strong>Árbol AVL:</strong> Un árbol BST autobalanceado donde la diferencia de altura entre los subárboles de un nodo nunca es mayor a uno.</li>
+        <li><strong>Árbol B:</strong> Un árbol de búsqueda equilibrado que permite almacenar más de un valor en un nodo.</li>
+        <li><strong>Árbol N-ario:</strong> Cada nodo puede tener hasta N hijos.</li>
+        <li><strong>Operaciones:</strong>
+            <ul>
+                <li>Inserción, eliminación: Dependiendo del tipo de árbol, las operaciones varían en complejidad.</li>
+                <li>Recorrido: Inorden, preorden, postorden.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Grafos</h3>
+    <ul>
+        <li><strong>Definición y representación:</strong> Los grafos son conjuntos de nodos (vértices) conectados por aristas (enlaces). Se representan comúnmente mediante una matriz de adyacencia o una lista de adyacencia.</li>
+        <li><strong>Tipos:</strong> Grafos dirigidos/no dirigidos, ponderados/no ponderados.</li>
+        <li><strong>Algoritmos básicos:</strong>
+            <ul>
+                <li>BFS: Recorre el grafo por niveles.</li>
+                <li>DFS: Recorre el grafo en profundidad.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Tablas Hash</h3>
+    <ul>
+        <li><strong>Concepto de función hash:</strong> Una función que convierte datos en una posición en una tabla hash.</li>
+        <li><strong>Manejo de colisiones:</strong>
+            <ul>
+                <li>Encadenamiento: Uso de listas enlazadas para manejar colisiones.</li>
+                <li>Direccionamiento abierto: Busca otra posición en la tabla cuando ocurre una colisión.</li>
+            </ul>
+        </li>
+        <li><strong>Operaciones básicas:</strong> Inserción, búsqueda y eliminación.</li>
+    </ul>
+
+    <h2>2. Algoritmos</h2>
+
+    <h3>Algoritmos de Ordenación</h3>
+    <ul>
+        <li>Bubble Sort: Repetidamente intercambia los elementos adyacentes si están en el orden incorrecto.</li>
+        <li>Insertion Sort: Construye la lista ordenada un elemento a la vez.</li>
+        <li>Selection Sort: Selecciona el elemento más pequeño y lo coloca en su posición correcta.</li>
+        <li>Quick Sort: Divide y ordena recursivamente sublistas alrededor de un pivote.</li>
+        <li>Merge Sort: Divide la lista en sublistas, las ordena y las fusiona.</li>
+        <li>Heap Sort: Usa una estructura de datos de montículo para ordenar.</li>
+    </ul>
+
+    <h3>Algoritmos de Búsqueda</h3>
+    <ul>
+        <li>Búsqueda lineal: Recorre secuencialmente la lista.</li>
+        <li>Búsqueda binaria: Divide la lista ordenada para buscar más rápido.</li>
+        <li>DFS y BFS en grafos: Recorren el grafo de manera profunda o por niveles.</li>
+    </ul>
+
+    <h3>Algoritmos de Grafos</h3>
+    <ul>
+        <li>Dijkstra: Encuentra el camino más corto en grafos ponderados.</li>
+        <li>Bellman-Ford: Similar a Dijkstra, pero soporta pesos negativos.</li>
+        <li>Floyd-Warshall: Encuentra el camino más corto entre todos los pares de nodos.</li>
+        <li>Kruskal y Prim: Encuentran el árbol de
